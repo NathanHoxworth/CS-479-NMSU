@@ -1,0 +1,15 @@
+The first line of my code is just clearing %rax. 
+Next, I load the string '/bin//sh' into $rdi using the hexadecimal for that string because it saved space and in reverse because it's little endian. 
+Then shifted %rdi to the right by 8 bits to move the null byte to the end of the string 
+and then I pushed the address of '/bin/sh' onto the stack to be used for the filename argument in the 'execve' call. 
+Then I moved the address from the top of the stack to %rdi so that %rdi now contains '/bin/sh'. 
+Now I clear %rax again so it can be used for the syscall 
+and then moved the null pointer for 'envp' from the top of the stack into %rsi. 
+Next, I moved the null pointer address for 'argv' into %rdx 
+and then I loaded the value '0x3b' (in Linux, the syscall numebr for 'execve') into the lower 8 bits of %rax. 
+Finally, I make the syscall using the paramaters I had set.
+
+
+The total size of my code is 36 bytes: 
+4831c048bf2f2f62696e2f736848c1ef08574889e74831c0504889e6504889e2b03b0f05
+
