@@ -93,5 +93,5 @@ The solution I found to the crackme was that it wanted any number that was evenl
 
 I also noticed that any input that started with any non integer value, would be immediately taken as correct input which I found out by messing around with it. This means that it reads through each character and once it encounters any non integer value, it stops sends the value that it has read so far, if the numbers it has read so far are not evenly divisble by 1223, then it would say no, but if it encountered any non integer value first, the function would automatically return 1.
 
-# More helpful
+# Which one?
 I found using IDA to be a lot more helpful to me, because it was a lot more visually appealing, which is helpful to me since I am a visual learner, and I found some very clear tutorials on how to get started with crackme files in IDA that helped me easily navigate it.
