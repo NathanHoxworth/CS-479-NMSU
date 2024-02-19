@@ -80,7 +80,12 @@
     
     Rsi stands for "source index", while rdi stands for "destination index".
     
-# Crackme open in Ghidra and IDA
+# Crackme open in Ghidra
+![Screenshot from 2024-02-16 13-40-21](https://github.com/NathanHoxworth/CS-479-NMSU/assets/122402730/f36069aa-764e-4a2c-abd8-947cae77e026)
+
+
+# Crackme open in IDA
+![Screenshot from 2024-02-16 13-36-29](https://github.com/NathanHoxworth/CS-479-NMSU/assets/122402730/0c183058-8c1a-494f-a1b6-859d97a0d2dc)
 
 
 # IDA or Ghidra?
