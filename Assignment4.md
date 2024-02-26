@@ -34,6 +34,7 @@ Solution:
 Keygen code:
 
 import random
+
 import string
 
 output = ''
@@ -43,6 +44,7 @@ var = random.randint(16,20)
 i = 0
 
 while (i < var):
+
 	if (i == 0):
 		output += 'A'
 		
@@ -77,6 +79,7 @@ Solution:
 Keygen code:
 
 import random
+
 import string
 
 output = ''
@@ -86,6 +89,7 @@ var = random.randint(16,20)
 i = 0
 
 while (i < var):
+
 	if (i == 6):
 		output += 'Y'
 		
