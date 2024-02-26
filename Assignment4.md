@@ -1,25 +1,25 @@
 # Crackme1
 Solution: picklecucumberl337
 
-Keygen:
-[Upprint("picklecucumberl337")
-loading sol1.py…]()
+Keygen code:
+
+print("picklecucumberl337")
 
 
 # Crackme2
 Solution: artificialtree
 
-Keygen:
-[Uploaprint("artificialtree")
-ding sol2.py…]()
+Keygen code:
+
+print("artificialtree")
 
 
 # Crackme3
 Solution: strawberrykiwi
 
-Keygen:
-[Uploprint ("strawberrykiwi")
-ading sol3.py…]()
+Keygen code:
+
+print ("strawberrykiwi")
 
 
 # Controlflow1
@@ -31,8 +31,9 @@ Solution:
 * 8th character is '%'
 * 16th character is '*'
 
-Keygen:
-[Uimport random
+Keygen code:
+
+import random
 import string
 
 output = ''
@@ -62,7 +63,6 @@ while (i < var):
 	
 	i += 1
 print(output)
-ploading sol4.py…]()
 
 
 # Controlflow2
@@ -74,7 +74,8 @@ Solution:
 * 12th character is '*'
 * 14th character is '6'
 
-Keygen:
+Keygen code:
+
 import random
 import string
 
@@ -105,4 +106,3 @@ while (i < var):
 	
 	i += 1
 print(output)
-
