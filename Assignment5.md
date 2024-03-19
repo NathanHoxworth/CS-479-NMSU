@@ -1,4 +1,4 @@
-[secret.txt](https://github.com/NathanHoxworth/CS-479-NMSU/files/14645703/secret.txt)[secret.txt](https://github.com/NathanHoxworth/CS-479-NMSU/files/14645681/secret.txt)# Assignment 5 - Ransomware Decryption
+[secret.txt](https://github.com/NathanHoxworth/CS-479-NMSU/files/14645878/secret.txt)[secret.txt](https://github.com/NathanHoxworth/CS-479-NMSU/files/14645703/secret.txt)[secret.txt](https://github.com/NathanHoxworth/CS-479-NMSU/files/14645681/secret.txt)# Assignment 5 - Ransomware Decryption
 I struggled a lot with this assignment for some reason, I wasn't able to find key for the second one, I thought it was 20 but I guess I was wrong. I will keep looking until I find it, and then post an updated section once I do.
 I spent almost the entire break on it in both IDA and Ghidra and still had no luck, but I will keep going until I get it.
 
@@ -78,11 +78,12 @@ if __name__ == "__main__":
 
 Here is my secret.txt file:
 
-[UpGf`u#Purgfos/
+Gf`u#Purgfos/
 	Znr#k`qf#eb`qxwwfe'wkd'nfrtbdd)#Dnhg#kha"
 	#Ebphdbom~/#ha#qdqfqrb#fo`jmdbqjo`#jr'aboifg-'wkdi#b!klw!he#uof#nwfm!tlvsdf#bhnntijwx'jp!clllbg#uh#e`no-#
 	#'Ilo'Ofbo#Inobmrbm
-	Dn'MNRR#QD&loading secret.txt…]()
+	Dn'MNRR#QD&
+
 
  Here is the screenshot of the more human readable code in IDA:
 
