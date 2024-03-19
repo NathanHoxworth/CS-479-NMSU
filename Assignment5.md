@@ -6,16 +6,15 @@ I spent almost the entire break on it in both IDA and Ghidra and still had no lu
 
 Here is my decryption code:
 
-[Upl#!/usr/bin/env python3
+
+#!/usr/bin/env python3
 
 import sys
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Error: Invalid argument")
         sys.exit(1)
-
     input_file = sys.argv[1]
     output_file = sys.argv[2]
     key = b'4'
@@ -28,100 +27,33 @@ if __name__ == "__main__":
                 decrypted_byte = byte ^ key[i % len(key)]
                 outf.write(bytes([decrypted_byte]))
 
-oading decrypt.py…]()
 
 
 Here is my secret.txt file:
 
-[UploadiDear Student,
+Dear Student,
 
 You have decrypted the message. Good job!
 
 "Many of the engineers I interviewed worked on reverse-engineering technology. It’s a hallmark of Area 51."
  ~ ANNIE JACOBSEN
 
-Go NMSU RE!ng secret.txt…]()
+Go NMSU RE!
 
 
 
-I couldn't get a screenshot of the code because my laptop screen was too small, so I could only see small bits of it even while fullscreened, but here is the code written out a bit more nicely as done in the lecture video:
+I couldn't get a single screenshot of the code because my laptop screen was too small, so I could only get it as 2, but here is a neater version of the code as we did in the lecture video:
 
-int decrypt(EVP_PKEY_CTX *to_decrypt,uchar *out,size_t *outlen,uchar *in,size_t inlen)
-{
-  uint return_val;
-  undefined *puVar1;
-  undefined *puVar2;
-  int in_GS_OFFSET;
-  undefined4 uStackY_60;
-  int iStack_50;
-  undefined auStack_4c [8];
-  uchar *local_44;
-  EVP_PKEY_CTX *filename;
-  byte char_four;
-  int i;
-  int is_one;
-  undefined4 infile_handle;
-  int filelength;
-  undefined4 outfile;
-  undefined4 bytes_read;
-  int bytes_written;
-  byte one_byte_buff;
-  uint local_10;
-  
-  filename = to_decrypt;
-  local_44 = out;
-  local_10 = *(uint *)(in_GS_OFFSET + 0x14);
-  char_four = '4';
-  is_one = 1;
-  infile_handle = fopen(to_decrypt,&DAT_00012040);
-  SeekTheEnd(infile_handle,0,2);
-  filelength = ReadFilePTROffset(infile_handle);
-  Rewind(infile_handle);
-  printf_2_args("Decrypting encrypted file \"%s\". It is %ld bytes long.\n",filename,filelength);
-  outfile = fopen(local_44,&WB);
-  puVar2 = auStack_4c;
-  for (i = 0; i < filelength; i = i + 1) {
-    *(undefined4 *)(puVar2 + -4) = infile_handle;
-    *(int *)(puVar2 + -8) = is_one;
-    *(undefined4 *)(puVar2 + -0xc) = 1;
-    *(byte **)(puVar2 + -0x10) = &one_byte_buff;
-    *(undefined4 *)(puVar2 + -0x14) = 0x11496;
-    bytes_read = READFILE();
-    one_byte_buff = one_byte_buff ^ char_four;
-    *(undefined4 *)(puVar2 + -4) = outfile;
-    *(undefined4 *)(puVar2 + -8) = 1;
-    *(undefined4 *)(puVar2 + -0xc) = 1;
-    *(byte **)(puVar2 + -0x10) = &one_byte_buff;
-    *(undefined4 *)(puVar2 + -0x14) = 0x114b6;
-    bytes_written = FWRITE();
-    puVar1 = puVar2;
-    if (is_one != bytes_written) {
-      *(int *)(puVar2 + -4) = is_one;
-      *(int *)(puVar2 + -8) = bytes_written;
-      *(EVP_PKEY_CTX **)(puVar2 + -0xc) = filename;
-      puVar1 = puVar2 + -0x10;
-      *(char **)(puVar2 + -0x10) = "ERROR decrypting \"%s\". Blocks written: %d, expected %d";
-      *(undefined4 *)(puVar2 + -0x14) = 0x114d9;
-      printf_2_args();
-      *(undefined4 *)(puVar2 + -0x10) = 7;
-      *(undefined4 *)(puVar2 + -0x14) = 0x114e6;
-      Die();
-    }
-    puVar2 = puVar1;
-  }
-  return_val = local_10 ^ *(uint *)(in_GS_OFFSET + 0x14);
-  if (return_val != 0) {
-    *(undefined4 *)(puVar2 + -4) = 0x11504;
-    return_val = __stack_chk_fail_local();
-  }
-  return return_val;
-}
+![Ghidra1](https://github.com/NathanHoxworth/CS-479-NMSU/assets/122402730/2e69d980-226f-49af-884d-7fd6aee15c40)
+
+![Ghidra2](https://github.com/NathanHoxworth/CS-479-NMSU/assets/122402730/a36b23fd-b40c-45ba-97f8-0d71b9c54809)
 
 # Ransomware 2
 
 Here is my decrypt file:
 
-[Uplo#!/usr/bin/env python3
+
+#!/usr/bin/env python3
 
 import sys
 
@@ -129,7 +61,6 @@ if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Error: Incorrect number of arguments")
         sys.exit(1)
-
     input_file = sys.argv[1]
     output_file = sys.argv[2]
     key = b'20'
@@ -144,8 +75,6 @@ if __name__ == "__main__":
                 decrypted_byte = byte ^ key[i % len(key)]
                 outf.write(bytes([decrypted_byte]))
 
-
-ading decrypt.py…]()
 
 Here is my secret.txt file:
 
