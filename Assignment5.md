@@ -7,18 +7,16 @@ I spent almost the entire break on it in both IDA and Ghidra and still had no lu
 Here is my decryption code:
 
 
-#!/usr/bin/env python3
-
-import sys
-
-if __name__ == "__main__":
+    import sys
+    
+    if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Error: Invalid argument")
         sys.exit(1)
     input_file = sys.argv[1]
     output_file = sys.argv[2]
     key = b'4'
-
+    
     with open(input_file, "rb") as inf:
         with open(output_file, "wb") as outf:
             contents = inf.read()
@@ -52,23 +50,19 @@ I couldn't get a single screenshot of the code because my laptop screen was too 
 
 Here is my decrypt file:
 
-
-#!/usr/bin/env python3
-
-import sys
-
-if __name__ == "__main__":
+    
+    import sys
+    
+    if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Error: Incorrect number of arguments")
+        print("Error: Invalid argument")
         sys.exit(1)
     input_file = sys.argv[1]
     output_file = sys.argv[2]
-    key = b'20'
-
-
-    with open (input_file, "rb") as inf:
+    key = b'4'
+    
+    with open(input_file, "rb") as inf:
         with open(output_file, "wb") as outf:
-            
             contents = inf.read()
 
             for i, byte in enumerate(contents):
