@@ -1,4 +1,6 @@
 # Assignment 8
+
+# OSINT
 NjRAT is a malware that has keylogging capabilities, webcam access, can upload and download files, steal any saved browser credentials, execute shell commands, modify regstries, take screen captures, and view the desktop of the computer, as well as open a backdoor for any attackers to use to gain access to the machine. 
 It was first found in 2012 and is still used today by many attackers to gain access to systems across the world. Most recently, it has been used against organizations in the Middle East and North Africa. 
 It is mostly spread through removable drives, phishing attacks, and interacting with other malicious software. 
@@ -11,3 +13,5 @@ Dates / Features: https://www.splunk.com/en_us/blog/security/more-than-just-a-ra
 
 Another source I found: https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/1-Using-njRAT.md
 
+# RegShot
+My RegShot showed that 2 keys got deleted, both of them relating to the Cache in my Internet Settings of my Windows Software, and then I had 126 keys added that seemed to be opening the backdoor for the attacker by adding zones to the internet, adding keys to the trusted people folder, and going into the shell and I'm assuming generating keys that allow the attacker to have administrator privileges on the machine.
