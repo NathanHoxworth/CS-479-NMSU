@@ -8,13 +8,12 @@ https://github.com/NathanHoxworth/CS-479-NMSU/blob/main/NjRAT.exe
 
 # Video
 
+Sorry this is a video from my phone, I could not get any screen recording to work, they would just all give a black screen so this was the only thing I had left in order to get some sort of video in.
+
 
 
 # Code
-
-
-
-        
+ 
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
