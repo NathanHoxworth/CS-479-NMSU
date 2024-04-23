@@ -8,9 +8,9 @@ https://github.com/NathanHoxworth/CS-479-NMSU/blob/main/NjRAT.exe
 
 # Video
 
-Sorry this is a video from my phone, I could not get any screen recording to work, they would just all give a black screen so this was the only thing I had left in order to get some sort of video in.
+Sorry this is a video from my phone, I could not get any screen recording to work on my linux laptop, they would just all give a black screen so this was the only thing I had left in order to get some sort of video in.
 
-
+I was not able to get it to let me put the file into GitHub either, I tried compressing them, running it through the command line and all that, but to no avail so I will just send the file over email.
 
 # Code
  
